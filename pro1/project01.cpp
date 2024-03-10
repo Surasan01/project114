@@ -161,6 +161,7 @@ class method{
                 }
             }
         }
+        cout << "Inverse Matrix A :" << endl;
         for (i=1;i<=n;i++){
             for (j=1;j<=n;j++){
                 cout << setw(6) << setprecision(3) << c[i][j]<< " ";
@@ -182,7 +183,7 @@ int main(){
         cout <<  "Select choice (1,2,3,4): ";
         cin >> choice;
     }
-    cout << "Input Matrix " << endl;
+    cout << "Input Matrix A :" << endl;
     
     // float a[15][15]={{0,0,0,0},{0,1,2,3},{0,2,5,3},{0,1,0,8}},row[15]={0,1,2,3},x[15];
     float a[15][15],row[15],x[15];
@@ -196,15 +197,16 @@ int main(){
             cin >> row[i];
         }
     }
+    cout << "Matrix A :" << endl;
     for (i=1;i<=n;i++){
         for (j=1;j<=n;j++){
             cout << setw(6) << setprecision(3) << a[i][j]<< " ";
             }
-            if (choice!=4){
+        if (choice!=4){
                 cout << setw(3) << "| " << row[i];
-            }
-            cout << endl;
         }
+        cout << endl;
+    }
     cout << endl;
     switch (choice){
     case 1:
